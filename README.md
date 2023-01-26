@@ -20,8 +20,20 @@ api/database: conterá os arquivos:
         nada impede que outros drivers sejam incluídos.
         licoes_ingles.sqldb (arquivo em sqllite para armazenar o banco)
         Evidentemente que para outros bancos de dados o arquivo de armazenamento estará em outra parte da estrutura.
+
+        Drivers utilizados: 
+            sqllite     : github.com/mattn/go-sqlite3
+            sqlserver   : github.com/denisenkom/go-mssqldb
+            mysql       : github.com/go-sql-driver/mysql
+            firebird    : github.com/nakagami/firebirdsql
+
+
+
+
 api/database/scripts: arquivos de script para a criação do banco, tabelas e popular as tabelas com os verbos irregulares e outros scripts.
 api/router: router.go, responsável por gerar as rotas.
 api/controllers: Responsável por conectar os modelos e repositórios ao banco.
 api/modelos: conterá as estruturas (structs) das entidades, bem como os métodos ligados a estas entidades.
 api/repositorios: receberá o modelo e implementará os métodos necessários (crud) para manutenção dos dados
+
+extras: documentos e materiais adicionais
