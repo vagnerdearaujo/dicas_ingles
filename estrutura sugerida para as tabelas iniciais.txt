@@ -1,0 +1,21 @@
+verbos
+	IDVerbo int autoinc pk
+	Tipo byte not null //Tipo de Verbo: 1:Regular; 2:Irregular
+	Infinitive string(20) not null //Tempo verbal Infinitive
+	SimplePast string(20) not null //Tempo verbal SimplePast
+	Participle string(20) not null //Tempo verbal Participle
+	Pronunciation_Infinitive string(50) not null //Escrita da pronúncia no tempo verbal Infinitive
+	Pronunciation_SimplePast string(50) not null //Escrita da pronúncia no tempo verbal SimplePast
+    Pronunciation_Participle string(50) not null //Escrita da pronúncia no tempo verbal Participle
+	Inf_eq_Simple byte not null //Infinive = Simple?
+	Inf_eq_Part  byte not null //Infinive = Participle?
+	Simple_eq_Part  byte not null //Simple = Participle?
+	
+usos
+	IDUso int autoinc pk
+	IDVerbo int not int 
+	Use_Infinitive string(200)
+	Use_SimplePast string(200)
+	Use_Participle string(200)
+	
+	
