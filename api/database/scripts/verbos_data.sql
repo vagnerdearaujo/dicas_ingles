@@ -1,7 +1,7 @@
 verbos
 
 create table verbos(
-	IDVerbo int autoinc primary key,
+	IDVerbo	INTEGER NOT NULL,
 	Tipo byte not null, --Tipo de Verbo: 1:Regular; 2:Irregular
 	Infinitive string(20) not null, --Tempo verbal Infinitive
 	SimplePast string(20) not null, --Tempo verbal SimplePast
@@ -9,18 +9,20 @@ create table verbos(
 	Meaning string(100) not null, -- Significado
 	Pronunciation_Infinitive string(50) not null, --Escrita da pronúncia no tempo verbal Infinitive
 	Pronunciation_SimplePast string(50) not null, --Escrita da pronúncia no tempo verbal SimplePast
-    Pronunciation_Participle string(50) not null, --Escrita da pronúncia no tempo verbal Participle
+	Pronunciation_Participle string(50) not null, --Escrita da pronúncia no tempo verbal Participle
 	Inf_eq_Simple byte not null, --Infinive = Simple?
 	Inf_eq_Part  byte not null, --Infinive = Participle?
-	Simple_eq_Part  byte not null --Simple = Participle?
+	Simple_eq_Part  byte not null, --Simple = Participle?
+	PRIMARY KEY("IDVerbo" AUTOINCREMENT)
 );
 	
 create table usos (
-	IDUso int autoinc primary key,
-	IDVerbo int not null, 
+	IDUso integer not null,
+	IDVerbo integer not null, 
 	Use_Infinitive string(200),
 	Use_SimplePast string(200),
-	Use_Participle string(200)
+	Use_Participle string(200),
+	PRIMARY KEY("IDUso" AUTOINCREMENT)
 );	
 
 Gerar via Excel
