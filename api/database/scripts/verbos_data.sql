@@ -24,7 +24,7 @@ create table usos (
 );	
 
 Gerar via Excel
-=CONCATENAR("insert into verbos (Tipo,Infinitive,SimplePast,Participle,Meaning,Inf_eq_Simple,Inf_eq_Part,Simple_eq_Part,Pronunciation_Infinitive,Pronunciation_SimplePast,Pronunciation_Participle) values (";"'";A2;"','";B2;"','";C2;"','";D2;"',";E2;",";F2;",";G2;",'','','');")
+=CONCATENAR("insert into verbos (Tipo,Infinitive,SimplePast,Participle,Meaning,Inf_eq_Simple,Inf_eq_Part,Simple_eq_Part,Pronunciation_Infinitive,Pronunciation_SimplePast,Pronunciation_Participle) values (2";",'";A2;"','";B2;"','";C2;"','";D2;"',";E2;",";F2;",";G2;",'','','');")
 
 
 insert into verbos (Tipo,Infinitive,SimplePast,Participle,Meaning,Inf_eq_Simple,Inf_eq_Part,Simple_eq_Part,Pronunciation_Infinitive,Pronunciation_SimplePast,Pronunciation_Participle) values (2,'to arise','arose','arisen','erguer, levantar',0,0,0,'','','');
