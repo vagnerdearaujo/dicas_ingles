@@ -25,6 +25,14 @@ create table usos (
 	PRIMARY KEY("IDUso" AUTOINCREMENT)
 );	
 
+
+select * from verbos
+--where Inf_eq_Simple = 1 --Infinitive = Simple
+--where Inf_eq_Part = 1 --Infinitive = Paticiple
+--where Simple_eq_Part = 1 == Simple = Participle
+where Inf_eq_Simple+Inf_eq_Part+Simple_eq_Part = 3 --All iguals
+
+
 Gerar via Excel
 =CONCATENAR("insert into verbos (Tipo,Infinitive,SimplePast,Participle,Meaning,Inf_eq_Simple,Inf_eq_Part,Simple_eq_Part,Pronunciation_Infinitive,Pronunciation_SimplePast,Pronunciation_Participle) values (2";",'";A2;"','";B2;"','";C2;"','";D2;"',";E2;",";F2;",";G2;",'','','');")
 
