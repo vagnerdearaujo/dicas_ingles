@@ -2,6 +2,8 @@ Instalar sqlite no debian
 //https://terminalroot.com.br/2021/02/como-utilizar-o-sqlite.html
 
 sudo apt install sqlite3
+
+Para testar o sqlite no terminal, digite:
 sqlite3 nome-da-minha-base-de-dados.sqlite
 
 Os comandos para criação de tabelas e outros objetos podem ser digitados diretamente no prompt de comando.
@@ -11,4 +13,6 @@ Para configurar a saída em formato markdown digite:
 Para sair do gerenciador digite: .exit
 
 Para auxiliar no gerenciamento dos dados há diversas opções, entre elas o SqliteStudio (https://sqlitestudio.pl/)
+
+Recomendável a instalação de uma extensão Sqliteviewer 
 
