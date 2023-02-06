@@ -1,5 +1,24 @@
 Inclusão dos verbos
 
+--Infinite == Simple Past
+select * from Verbos
+where Inf_Simple = 'S'
+
+--Infinitive == Participle
+select * from Verbos
+where Inf_Part = 'S'
+
+--SimplePast == Participle
+select * from Verbos
+where Simple_Part = 'S'
+
+--All diferents
+select * from Verbos
+where Inf_Simple = 'N'
+      and Inf_Part = 'N'
+	    and Simple_Part = 'N'
+
+
 Gerar via Excel
 =CONCATENAR("insert into verbos (TipoVerbo,Infinitivo,Significado,PronunciaInf,SimplePast,PronunciaSPast,Participle,PronunciaPart,ExemploSPast,ExemploPart,ExemploSimplePresent,ExemploPresentContinuous,ExemploFuture,Observacoes,Inf_Simple,Inf_Part,Simple_Part)";;" values ('I','";A2;"','";B2;"','";C2;"','";D2;"','";E2;"','";F2;"','";G2;"','";H2;"','";I2;"','";J2;"','";K2;"','";L2;")")
 
