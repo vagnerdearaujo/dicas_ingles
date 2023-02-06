@@ -3,7 +3,7 @@ Inclusão dos verbos
 Gerar via Excel
 =CONCATENAR("insert into verbos (TipoVerbo,Infinitivo,Significado,PronunciaInf,SimplePast,PronunciaSPast,Participle,PronunciaPart,ExemploSPast,ExemploPart,ExemploSimplePresent,ExemploPresentContinuous,ExemploFuture,Observacoes,Inf_Simple,Inf_Part,Simple_Part)";;" values ('I','";A2;"','";B2;"','";C2;"','";D2;"','";E2;"','";F2;"','";G2;"','";H2;"','";I2;"','";J2;"','";K2;"','";L2;")")
 
-use Dicas_Ingles
+use dicas_ingles
 insert into verbos (TipoVerbo,Infinitivo,Significado,PronunciaInf,SimplePast,PronunciaSPast,Participle,PronunciaPart,ExemploSPast,ExemploPart,Inf_Simple,Inf_Part,Simple_Part) values ('I','spin','girar','spɪn','spun','spʌn','spun','spʌn','She spun around','The wheel has spun.','N','N','S');
 insert into verbos (TipoVerbo,Infinitivo,Significado,PronunciaInf,SimplePast,PronunciaSPast,Participle,PronunciaPart,ExemploSPast,ExemploPart,Inf_Simple,Inf_Part,Simple_Part) values ('I','spit','cuspir','spɪt','spat','spæt','spat','spæt','He spat on the ground','The water has spat out of the bottle.','N','N','S');
 insert into verbos (TipoVerbo,Infinitivo,Significado,PronunciaInf,SimplePast,PronunciaSPast,Participle,PronunciaPart,ExemploSPast,ExemploPart,Inf_Simple,Inf_Part,Simple_Part) values ('I','spoil','estragar','spɔɪl','spoiled','spɔɪld','spoiled','spɔɪld','He spoiled the food','The food has been spoiled.','N','N','S');
